@@ -25,8 +25,7 @@ addEventListener('mousemove', (e) => {
 const colors = [
     '#E86A92',
     '#f7e733',
-    '#41E2BA',
-    '#2B2D42'
+    '#41E2BA'
 ]
 
 
@@ -98,12 +97,12 @@ let count = 0;
 function animate() {
     requestAnimationFrame(animate);
     if (count > 10) {
-        c.fillStyle = 'rgba(255, 255, 255, 0.4)';
+        c.fillStyle = 'rgba(0, 0, 0, 0.4)';
         c.fillRect(0, 0, canvas.width, canvas.height);
         count = 0;
     }
     
-    c.fillStyle = 'rgba(255, 255, 255, 0.05)';
+    c.fillStyle = 'rgba(0, 0, 0, 0.05)';
     c.fillRect(0, 0, canvas.width, canvas.height);
 
     particles.forEach(particle => {
