@@ -38,8 +38,8 @@ function Particle(x, y, r) {
     this.radians = Math.random() * Math.PI * 2;
     this.velocity = 0.025;
     this.dFromCenter = {
-        x: randomNum(50, 150),
-        y: randomNum(50, 150)
+        x: randomNum(25, 125),
+        y: randomNum(25, 125)
     };
     this.lastMouse = {
         x: x,
@@ -96,8 +96,8 @@ let count = 0;
 //Animation Loop
 function animate() {
     requestAnimationFrame(animate);
-    if (count > 10) {
-        c.fillStyle = 'rgba(0, 0, 0, 0.4)';
+    if (count > 20) {
+        c.fillStyle = 'rgba(0, 0, 0, 0.2)';
         c.fillRect(0, 0, canvas.width, canvas.height);
         count = 0;
     }
