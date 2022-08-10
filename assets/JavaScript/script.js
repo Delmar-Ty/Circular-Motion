@@ -36,10 +36,10 @@ function Particle(x, y, r) {
     this.r = r;
     this.color = colors[randomNum(0, colors.length)];
     this.radians = Math.random() * Math.PI * 2;
-    this.velocity = 0.025;
+    this.velocity = 0.001;
     this.dFromCenter = {
-        x: randomNum(25, 125),
-        y: randomNum(25, 125)
+        x: randomNum(25, 100),
+        y: randomNum(25, 100)
     };
     this.lastMouse = {
         x: x,
@@ -84,7 +84,7 @@ let particles = [];
 //Init Function
 function init() {
     particles = [];
-    for (let i = 0; i < 75; i++) {
+    for (let i = 0; i < 50; i++) {
         const r = (Math.random() * 2) + 1;
         particles.push(new Particle(canvas.width / 2, canvas.height / 2, r));
     }
